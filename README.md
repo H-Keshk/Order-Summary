@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./desktop-preview-screenshot.png)
-![](./mobile-preview-screenshot.png)
+![](./web-screen.png)
+![](./mobile-screen.png)
 
 
 ### Links
