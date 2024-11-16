@@ -61,7 +61,7 @@ body::before {
   border-top-right-radius: var(--rds);
 }
 .card-body {
-  margin: 2.3rem;
+  margin: 2.5rem;
 }
 .about h2 {
   margin: 1.6rem 0;
@@ -114,7 +114,7 @@ body::before {
 }
 button {
   display: block;
-  margin: 1.65rem auto;
+  margin: 1.8rem auto;
   border: none;
   padding: 1rem;
   width: 100%;
