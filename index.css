@@ -1,0 +1,196 @@
+/* General */
+body { 
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  line-height: 1.4rem;
+  font-weight: 500;
+  overflow: hidden
+}
+body::before {
+  position: absolute;
+  content: url(images/pattern-background-desktop.svg);
+  width: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width:767px) {
+  body::before {
+    content: url(images/pattern-background-mobile.svg);
+  }
+}
+
+/* Variables */
+:root {
+  --rds: 1rem;
+  --rds-in: 0.65rem;
+  --trans: all 0.3s;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 31.25%;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0px 11px 16px 7px hsl(235.21deg 100% 91.58%);
+  border-radius: var(--rds);
+  -webkit-border-radius: var(--rds);
+  -moz-border-radius: var(--rds);
+  -ms-border-radius: var(--rds);
+  -o-border-radius: var(--rds);
+}
+.card > img {
+  width: 100%;
+  border-top-left-radius: var(--rds);
+  border-top-right-radius: var(--rds);
+}
+.card-body {
+  margin: 2.6rem;
+}
+.about h2 {
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+  font-size: 1.57rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1.3rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: var(--rds-in);
+  -webkit-border-radius: var(--rds-in);
+  -moz-border-radius: var(--rds-in);
+  -ms-border-radius: var(--rds-in);
+  -o-border-radius: var(--rds-in);
+}
+.plan-dtls {
+  display: flex;
+  align-items: center;
+}
+.dtls {
+  margin-left: 1rem;
+}
+.plan-dtls h3 {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin: 0;
+}
+.plan-dtls p {
+  margin: 0;
+}
+.plan a {
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+    font-weight: 900;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+.plan a:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+button {
+  display: block;
+  margin: 1.65rem auto;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0px 11px 16px 7px hsl(246.29deg 69.72% 90.09%);
+  border-radius: var(--rds-in);
+  -webkit-border-radius: var(--rds-in);
+  -moz-border-radius: var(--rds-in);
+  -ms-border-radius: var(--rds-in);
+  -o-border-radius: var(--rds-in);
+  transition: var(--trans);
+  -webkit-transition: var(--trans);
+  -moz-transition: var(--trans);
+  -ms-transition: var(--trans);
+  -o-transition: var(--trans);
+}
+button:hover {
+  background-color: #766cf1;
+}
+.card-body > a {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 0.8rem;
+  transition: var(--trans);
+  -webkit-transition: var(--trans);
+  -moz-transition: var(--trans);
+  -ms-transition: var(--trans);
+  -o-transition: var(--trans);
+}
+.card-body > a:hover {
+  color: hsl(223, 47%, 23%);
+}
+@media (max-width:1199px) {
+  .card {
+    width: 50%;
+  }
+}
+@media (max-width:767px) {
+  .card {
+    width: 87%;
+  }
+  .card-body {
+    margin: 1.5rem 1.3rem;
+  }
+  .card-body h2 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0 1rem;
+  }
+  .plan {
+    padding: 0.9rem;
+  }
+  .plan-dtls h3 {
+    font-size: 0.8rem;
+    
+  }
+  .plan a {
+    font-size: 12px;
+  }
+   button {
+    margin: 1.2rem auto;
+  }
+}
+
+
+/* Attribution */
+.attribution {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
